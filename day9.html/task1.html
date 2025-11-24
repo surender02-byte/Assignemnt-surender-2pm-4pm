@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a horizontal navigation where items are centered horizontally and vertically inside a 60px bar.</title>
+<style>
+   
+
+    ul {
+         display: flex;
+         flex-direction: row;
+         list-style-type:none;
+         gap: 16px;
+         justify-content: center;
+         justify-content: space-around;
+         align-items: center;
+         min-width: auto;
+         background-color: bisque;
+         padding: 20px;
+    
+    }
+    .rr{
+         display: flex;
+         flex-direction: column;
+         
+
+         
+         
+    }
+    li{
+        color: aqua;
+        padding: 20px;
+        background-color: brown;
+    }
+</style>
+</head>
+<body>
+   <nav class="nav">
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>Contact</li>
+       <li>products</li>  
+    </ul>
+ <ul class="rr">
+        <li>home</li>
+        <li>about</li>
+        <li>Contact</li>
+       <li>products</li>  
+    </ul>
+   </nav>
+
+</body>
+</html>
