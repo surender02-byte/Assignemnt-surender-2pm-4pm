@@ -3,53 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create a horizontal navigation where items are centered horizontally and vertically inside a 60px bar.</title>
-<style>
-   
-
-    ul {
-         display: flex;
-         flex-direction: row;
-         list-style-type:none;
-         gap: 16px;
-         justify-content: center;
-         justify-content: space-around;
-         align-items: center;
-         min-width: auto;
-         background-color: bisque;
-         padding: 20px;
-    
-    }
-    .rr{
-         display: flex;
-         flex-direction: column;
-         
-
-         
-         
-    }
-    li{
-        color: aqua;
-        padding: 20px;
-        background-color: brown;
-    }
-</style>
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            flex-direction: row ;
+            justify-content: space-around;
+            align-items: center;
+            background-color: bisque;
+            padding: 20px;
+            gap: 2rem;
+        }
+        .nv{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around ;
+            align-items: center;
+            gap: 1rem;padding: 20px;background-color: mediumseagreen;
+        }
+      a{
+           width: auto;
+            border: 2px solid orange;
+            background-color: azure;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-   <nav class="nav">
-    <ul>
-        <li>home</li>
-        <li>about</li>
-        <li>Contact</li>
-       <li>products</li>  
-    </ul>
- <ul class="rr">
-        <li>home</li>
-        <li>about</li>
-        <li>Contact</li>
-       <li>products</li>  
-    </ul>
-   </nav>
+    <nav class="nav">
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">products</a>
+        <a href="">contacts</a>
+    </nav>
+     <nav class="nv"> 
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">products</a>
+        <a href="">contacts</a></nav>
 
 </body>
 </html>
