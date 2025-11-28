@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a responsive Flexbox card row with equal spacing.</title>
+<style>
+    .container{
+      display: flex;
+    justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: bisque;
+      gap: 20px;
+      padding: 15px;
+    }
+    .container div{
+        height: 160px;
+        width: 300px;
+        background: linear-gradient(to right , #123ace, #ff8988) ;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card1">
+            <h1>card 1</h1>
+            <p>simple flex card</p>
+        </div>
+        <div class="card2">
+            <h1>card 1</h1>
+            <p>simple flex card</p>
+        </div>
+    <div class="card2">
+            <h1>card 1</h1>
+            <p>simple flex card</p>
+        </div>
+    </div>
+</body>
+</html>

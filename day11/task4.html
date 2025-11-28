@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give one flex item its own alignment using align-self</title>
+    <style>
+        .contanier{
+            background-color: burlywood;
+            display: flex;
+           height: 200px;
+            align-items:center;
+            gap: 20px;
+            padding: 50px;
+        }
+        .item{
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+            height: 30px;
+            width: 50px;
+            text-align: center;
+            margin: 10px;
+            border: 2px solid whitesmoke;
+            border-radius: 10px 20px 30px 40px ;
+
+        }
+        .self{
+            align-self: flex-end;
+            background-color: brown;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="item">a</div>
+        <div class="item self">b</div>
+        <div class="item">c</div>
+    </div>
+</body>
+</html>

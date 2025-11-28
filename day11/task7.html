@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Cards (Float + Clearfix)</title>
+
+<style>
+.container::after {
+    content: "";
+    display: block;
+    clear: both;   
+}
+
+.card {
+    float: left;            
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    background: #f2d7b6;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Product Card List</h2>
+
+<div class="container">
+
+    <div class="card">
+        <img src=".//7bfd875e85fbbed980e9df59bcde8579.jpg" alt="">
+        <h3>Product 1</h3>
+        <p>Price: $10  <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur temporibus in voluptatum dolor perferendis odit, rerum distinctio iusto alias ullam? Ullam doloribus error recusandae dicta alias saepe. Autem nam, dolorum delectus possimus quae ad impedit asperiores. Quibusdam architecto exercitationem magni iure quod autem voluptatum reprehenderit, quidem cum modi ratione atque?</p>
+        <button>Buy</button>
+    </div>
+
+</div>
+
+</body>
+</html>

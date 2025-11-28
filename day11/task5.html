@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a 2-column grid using 1fr 2fr.</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(1fr 2fr ) ;
+            grid-template-rows:1fr 2fr  ;
+            background-color: aqua;
+            gap: 30px;
+          
+
+        }
+        .container div{
+            background-color: chocolate;
+            color: firebrick;
+            padding: 20px;
+            align-content: center;
+            text-align: center;
+            font-size: 34px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </div>
+</body>
+</html>

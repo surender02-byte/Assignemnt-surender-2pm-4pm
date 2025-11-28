@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Grid-based photo gallery using repeat() and gap.</title>
+
+    <style>
+        .boxs{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         height: 300px;
+         gap: 20px;                              
+         padding: 20px;
+         background-color: bisque;
+         overflow-y: scroll;
+         overflow-x: scroll;
+        }
+        .boxs img{
+height: 150px;
+width: 100%;
+object-fit: cover;
+ border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>photo gallery</h1>
+    <div class="boxs">
+        <img src="./IMG_20251126_011729_797.jpg" alt="1">
+        <img src="./IMG_20251126_011729_814.jpg" alt="2">
+        <img src="./IMG_20251126_011730_345.jpg" alt="3">
+        <img src="./IMG_20251126_011730_485.jpg" alt="4">
+        <img src="./IMG_20251126_011730_555.jpg" alt="5">
+        <img src="./IMG_20251126_011730_583.jpg" alt="6">
+    </div>
+</body>
+</html>
