@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Chat Layout</title>
+
+<style>
+.chat {
+    height: 100vh;            /* full screen */
+    display: flex;
+    flex-direction: column;   /* input at bottom */
+}
+
+.messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;  /* newest at bottom */
+    overflow-y: auto;                /* scrolling */
+    padding: 10px;
+    background: #5a5555;
+    gap: 10px;
+}
+
+.msg {
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.input-area {
+    padding: 10px;
+    background: #ddd;
+}
+</style>
+
+</head>
+<body>
+
+<div class="chat">
+
+    <!-- Scrollable message area -->
+    <div class="messages">
+        <div class="msg">Hello!</div>
+        <div class="msg">How are you?</div>
+        <div class="msg">This is a chat message.</div>
+    </div>
+
+    <!-- Input fixed at bottom -->
+    <div class="input-area">
+        <input type="text" placeholder="Type a message..." style="width: 70%;">
+        <button>Send</button>
+    </div>
+
+</div>
+
+</body>
+</html>

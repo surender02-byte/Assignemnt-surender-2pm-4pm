@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack three blocks vertically and center them in the viewport using flex.</title>
+<style>
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 0%;
+    }
+    .block{
+        height: 60px;
+        width: 190px;
+        background-color: gold;
+        border: 3px solid;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        text-transform: uppercase;
+        text-shadow:10px 10px 10px ;
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">block1</div>
+        <div class="block">block2</div>
+        <div class="block">block3</div>
+    </div>
+</body>
+</html>

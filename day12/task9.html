@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Toolbar — Create a toolbar containing filters (left), search (center), and action group (right). Use margin-left: auto or gap to align groups.</title>
+    <style>
+        .continer{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            background-color: rgb(239, 166, 77);
+            gap: 20px;
+        }
+        .txt{
+             margin-left: auto;
+        }
+        .ok{
+            display: flex;
+            gap: 10px;
+        }
+        button{
+            background-color: rgb(247, 255, 13);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="continer">
+        <select class="date">
+            <option value=""> filter by date</option>
+            <option value="">today</option>
+            <option value="">this week</option>
+            <option value="">this month</option>
+        </select>
+
+         <div class="txt">
+            <input type="text" placeholder="search..." >
+           
+         </div>
+         <div class="ok" > 
+            <button >add</button>
+            <button>export</button></div>
+
+
+    </div>
+
+</body>
+</html>

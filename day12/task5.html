@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+  display: flex;
+  width: 200px; 
+  border: 1px solid blue;
+}
+
+.flex-item {
+  flex-grow: 1;
+  min-width: 0; 
+  border: 1px solid red;
+}
+
+.overflowing-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+  <div class="flex-item">
+    <p class="overflowing-text">This is a very long text that should be truncated with an ellipsis if it overflows its container.</p>
+  </div>
+</div>
+</body>
+</html>

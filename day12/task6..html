@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Cards — Create a 3-column pricing section that becomes a single column on small screens. Use gap and flex-direction media queries. Add CTA buttons centered inside each card.</title>
+<style>
+    .container{
+        background-color: bisque;
+        padding: 20px;
+        margin: 0%;
+        display: flex;
+    }
+    .cards{
+        flex: 1;
+        background-color: orangered;
+        text-align: center;
+        border: 4px solid;
+        margin: 20px;
+        padding: 10px;
+        
+    }
+    .cards button {
+    padding: 8px 15px;
+}
+@media (max-width: 600px){
+.container{
+    flex-direction: column;
+}
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <h3>basic</h3>
+            <p>$10</p>
+            <button>buy</button></div>
+        <div class="cards">
+            <h3>Standard</h3>
+            <p>$20</p>
+            <button>buy</button></div>
+        <div class="cards">
+            <h3>content</h3>
+            <p>$30</p>
+            <button>buy</button>
+        </div>
+    </div>
+</body>
+</html>
