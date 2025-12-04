@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a box that changes color on mobile.</title>
+<style>
+    .box{
+        height: 150px;
+        width: 500px;
+        border: 6px solid burlywood;
+        display: flex;
+        justify-content: center;
+        background-color: chocolate;
+    }
+    @media   (max-width:600px)
+    {.box {
+        background-color: brown;
+    }
+   
+    }
+</style>
+</head>
+<body>
+        <div class="box">textbox</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Hero Section</title>
+
+<style>
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://images.unsplash.com/photo-1523275335684-37898b6baf30") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    background: #ff9800;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="hero">
+    <h1>Welcome to Our Store</h1>
+    <p>Find the best products, great deals, and fast delivery all in one place.</p>
+    <button>Shop Now</button>
+</div>
+
+</body>
+</html>
