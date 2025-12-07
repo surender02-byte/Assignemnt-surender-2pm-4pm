@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert a 2-column layout to 1 column at 768px.</title>
+    <style>
+        .box{
+         display: grid;
+         grid-template-columns: repeat(2 ,1fr);   
+         background-color: bisque;
+         height: 100%;
+         width: 100%;
+         gap: 30px;
+        }
+        .box .bo{
+            height: 50px;
+            width: 350px;
+            padding: 20px 30px;
+            background-color: crimson;
+            text-align: center;
+            font-size: xx-large;
+        }
+        @media (max-width:768px) {
+            .box{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bo">column</div>
+        <div class="bo">column</div>
+    </div>
+</body>
+</html>

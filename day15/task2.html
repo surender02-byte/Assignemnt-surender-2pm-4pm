@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a box that becomes full width on mobile.</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 300px;
+            background-color: rgb(35, 30, 24);
+        }
+        .box .item{
+            height: 150px;
+            width: auto; 
+            padding: 50px;
+            background-color: crimson;
+           text-align: center;
+           font-size: xx-large;
+           color: white;
+        }
+        @media (max-width:600px) {
+            
+            .box{
+               
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">50</div>
+    </div>
+</body>
+</html>

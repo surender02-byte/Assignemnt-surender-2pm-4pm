@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a navbar change direction at 600px</title>
+    <style>
+        .box{
+            height: 100%;
+            width: 100%;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+        .box .bos a{
+            text-decoration: none;
+            text-transform: uppercase;}
+            @media (max-width:600px) {
+                .bos a{
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bo">
+            <h2>my shop</h2>
+        </div>
+        <div class="bos">
+            <nav>
+                <a href="">home</a>
+                <a href="">tell</a>
+                <a href="">contact</a>
+            </nav>
+        </div>
+       
+    </div>
+</body>
+</html>
