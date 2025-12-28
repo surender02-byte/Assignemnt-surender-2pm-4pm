@@ -14,7 +14,7 @@ Student.prototype.sayHello = function () {
 };
 
 const s1 = new Student("Sure", 1);
-const s2 = new Student("Abdul", 2);
+const s2 = new Student("sura", 2);
 
 s1.display();
 s2.sayHello();

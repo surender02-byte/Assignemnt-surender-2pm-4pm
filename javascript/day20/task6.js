@@ -5,7 +5,7 @@ class Product{
         this.name=name;
         this.price=price;
     }
-     discountedPrice(){
+     discountedPrice(){  // its used to display the function
         let discounts = this.price * 0.10;
         let finalPrice = this.price - discounts;
         console.log(`discounted prize: ${finalPrice}`);
