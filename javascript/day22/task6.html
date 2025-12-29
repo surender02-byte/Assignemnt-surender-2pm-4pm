@@ -1,0 +1,42 @@
+<!-- Build a “Dark Mode” button that toggles page colors. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Mode</title>
+    <style>
+        body {
+            background-color: rgb(204, 45, 45);
+            color: rgb(22, 21, 21);
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark {
+            background-color: #121212;
+            color: white;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Dark Mode Example</h2>
+    <p>This page can switch between Light and Dark mode.</p>
+
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark");
+        };
+    </script>
+
+</body>
+</html>

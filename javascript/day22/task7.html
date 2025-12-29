@@ -1,0 +1,23 @@
+<!-- Create an input field that updates text live below it-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Text Update</title>
+</head>
+<body>
+
+    <input type="text" id="textInput" placeholder="Type something..." oninput="updateText()">
+
+    <p id="outputText"></p>
+
+    <script>
+        function updateText() {
+            const input = document.getElementById("textInput").value;
+            document.getElementById("outputText").textContent = input;
+        };
+    </script>
+
+</body>
+</html>

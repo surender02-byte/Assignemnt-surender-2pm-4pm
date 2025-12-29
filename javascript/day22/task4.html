@@ -1,0 +1,28 @@
+<!-- Remove the first item of a list using removeChild().-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>new item</li>
+        <li>new item1</li>
+        <li>new item2</li>
+    </ul>
+    <button onclick="remove()">removeChild</button>
+
+    <script>
+        function remove() {
+            const list= document.getElementById("list");
+            const firststep =list.firstElementChild;
+            if(firststep){
+            list.removeChild(firststep);
+        };
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- Make a “To-Do List” app using appendChild() and removeChild(). -->
+
+<input type="text" id="taskInput" placeholder="Enter task">
+<button onclick="addItem()">Add</button>
+<button onclick="removeItem()">Remove Last</button>
+
+<ul id="list"></ul>
+
+<script>
+  function addItem() {
+    const input = document.getElementById("taskInput");
+    if (input.value === "") return;
+
+    const li = document.createElement("li");
+    li.textContent = input.value;
+    document.getElementById("list").appendChild(li);
+
+    input.value = "";
+  }
+
+  function removeItem() {
+    const list = document.getElementById("list");
+    if (list.lastElementChild) {
+      list.removeChild(list.lastElementChild);
+    }
+  }
+</script>

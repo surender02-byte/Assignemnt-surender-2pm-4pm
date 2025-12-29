@@ -1,0 +1,33 @@
+<!-- Create multiple buttons that change colors using addEventListener(). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Buttons Color Change</title>
+    <style>
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="color-btn" data-color="red">Red</button>
+    <button class="color-btn" data-color="green">Green</button>
+    <button class="color-btn" data-color="blue">Blue</button>
+
+    <script>
+        const buttons = document.querySelectorAll(".color-btn");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", function () {
+                document.body.style.backgroundColor = this.dataset.color;
+            });
+        });
+    </script>
+
+</body>
+</html>
