@@ -1,0 +1,24 @@
+<!-- Keyboard Tracker
+Display the key name and key code when a user presses any key. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Tracker</title>
+</head>
+<body>
+
+    <h2>Keyboard Tracker</h2>
+    <p>Press any key on the keyboard</p>
+
+    <h3 id="output"></h3>
+
+    <script>
+        document.addEventListener("keydown", function (event) {
+            document.getElementById("output").textContent =
+                "Key Name: " + event.key + " | Key Code: " + event.keyCode;
+        });
+    </script>
+
+</body>
+</html>

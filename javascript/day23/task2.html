@@ -1,0 +1,39 @@
+<!-- Use mouseover and mouseout events to change the background color of a div. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+<script>
+
+    let li = document.getElementById("btn");
+
+li.addEventListener('click',(event)=>{
+    li.textContent="check";
+    li.style.background= "lightgreen";
+    console.log("done");
+    
+}
+)
+
+    li.addEventListener('mouseover', (event)=>{
+        li.textContent="ok clicked";
+        console.log("press"); 
+    });
+    
+        li.addEventListener('mouseout',(even)=>{
+            li.textContent="click";
+            li.style.background="red";
+            console.log('return');
+            
+        })
+</script>
+
+</body>
+</html>

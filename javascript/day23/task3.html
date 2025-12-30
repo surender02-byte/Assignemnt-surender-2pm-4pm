@@ -1,0 +1,19 @@
+<!-- Detect a keydown event and log the pressed key in the console. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">clickme</button>
+    <script>
+        let li=document.getElementById('btn');
+        document.addEventListener('keydown',(event)=>{
+            console.log(event.key);
+        })
+    </script>
+</body>
+</html>

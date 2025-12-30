@@ -1,0 +1,41 @@
+<!-- Mouse Event Playground -->
+<!-- Create a box that changes color on click, dblclick, and mouseover. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid red;
+            margin: auto ;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p id="box">hi</p>
+    <script>
+        let btn = document.getElementById('box');
+        btn.addEventListener('click',(event)=>{
+            btn.style.background="red";
+            btn.textContent="change";
+        });
+
+         btn.addEventListener('dblclick',(event)=>{
+            btn.style.background="green";
+        });
+
+         btn.addEventListener('mouseover',(event)=>{
+            btn.style.background="gray";
+        });
+        
+    
+    </script>
+</body>
+</html>

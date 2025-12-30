@@ -1,0 +1,46 @@
+<!-- Live Form Preview -->
+<!-- As the user types into a form (name, email), show the preview below using input and change events. --><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Form Preview</title>
+</head>
+<body>
+
+    <h2>Live Form Preview</h2>
+
+    <form>
+        <label>
+            Name:
+            <input type="text" id="nameInput">
+        </label>
+        <br><br>
+
+        <label>
+            Email:
+            <input type="email" id="emailInput">
+        </label>
+    </form>
+
+    <h3>Preview</h3>
+    <p>Name: <span id="namePreview"></span></p>
+    <p>Email: <span id="emailPreview"></span></p>
+
+    <script>
+        const nameInput = document.getElementById("nameInput");
+        const emailInput = document.getElementById("emailInput");
+
+        const namePreview = document.getElementById("namePreview");
+        const emailPreview = document.getElementById("emailPreview");
+
+        nameInput.addEventListener("input", function () {
+            namePreview.textContent = nameInput.value;
+        });
+
+        emailInput.addEventListener("input", function () {
+            emailPreview.textContent = emailInput.value;
+        });
+    </script>
+
+</body>
+</html>
