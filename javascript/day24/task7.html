@@ -1,0 +1,48 @@
+<!-- // Custom error for empty form fields -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form id="myForm">
+    <input type="text" id="username" placeholder="Username">
+    <br><br>
+    <input type="email" id="email" placeholder="Email">
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+
+<p id="errorMsg" style="color:red;"></p>
+<script>
+
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    try {
+        let username = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
+
+        if (username === "") {
+            throw "Username field cannot be empty";
+        }
+
+        if (email === "") {
+            throw "Email field cannot be empty";
+        }
+
+        document.getElementById("errorMsg").textContent = "Form submitted successfully!";
+    }
+    catch (error) {
+        document.getElementById("errorMsg").textContent = error;
+    }
+});
+
+</script>
+
+</body>
+</html>
